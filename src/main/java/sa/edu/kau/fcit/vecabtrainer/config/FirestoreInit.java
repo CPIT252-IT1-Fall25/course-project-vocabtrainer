@@ -1,4 +1,4 @@
-package sa.edu.kau.fcit.cpit252.vocabtrainer.database;
+package sa.edu.kau.fcit.vecabtrainer.config;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.Firestore;

@@ -13,14 +13,16 @@ The **Vocab Trainer** is a Java command-line application that helps students eff
 
 ## Usage
 
-To build and run the app, use:
+Running the app from the Terminal:
 
+
+_Make sure to Sync the project with Maven_
 ```shell
-# Compile Java files
-javac *.java
+# On Windows environment
+mvnw.cmd spring-boot:run
 
-# Run the application
-java Main
+# On Linux or macOS environment
+./mvnw spring-boot:run
 ```
 ## License
 
