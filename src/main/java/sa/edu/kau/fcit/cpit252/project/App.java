@@ -1,10 +1,19 @@
 package sa.edu.kau.fcit.cpit252.project;
 
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Welcome to Vocab Trainer!");
+
+        Word word = new Word.Builder("abandon", "to leave something behind")
+                .partOfSpeech("verb")
+                .exampleSentence("He decided to abandon the old project.")
+                .difficultyLevel(3)
+                .addSynonym("leave")
+                .addSynonym("desert")
+                .build();
+
+        Card card = new Card(word);
+
+        card.showFront();
+        card.showBack();
     }
 }
