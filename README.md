@@ -2,20 +2,24 @@
 # Vocab Trainer / Flashcards
 
 ## Description
-The **Vocab Trainer** is a Java command-line application that helps students efficiently learn and review vocabulary. Users can create flashcards, organize them into decks, and practice through adaptive study sessions that improve long-term retention. This offline solution eliminates the need for internet access or user accounts, allowing focused studying without distractions.
+The Design Pattern Flashcards App is a web application designed to help developers and students efficiently learn and review software design patterns. Users can create, organize, and study flashcards for essential patterns. The platform includes features to test knowledge and track study progress, offering a focused, interactive environment for skill mastery.
 
 ## Features
-- Create and load decks of vocabulary flashcards
-- Add new cards with terms and meanings
-- Review flashcards and track study progress
-- Save and export decks for future sessions
-- Lightweight, offline, and easy-to-use
+- **Authentication**: Secure user accounts managed via Firebase Authentication.
+- **Flashcard**: Showing design pattern questions with different types of questions: guessing the name of the design pattern, guessing the intent, problem, or solution.
+- **Knowledge Testing**: Take quizzes or tests to assess understanding of the patterns.
+
+## Tech Stack
+| Component | Technology | Details |
+|---|---|---|
+| Frontend | React, Tailwind CSS | UI and responsive styling. |
+| Backend | Java Spring | Application logic and API services. |
+| Authentication | Firebase Auth | User registration and secure sign-in. |
+| Database | Firebase Firestore (NoSQL) | Scalable data storage. |
+| Deployment | Backend: Netlify (Docker) | Frontend: TBD |
 
 ## Usage
-
 Running the app from the Terminal:
-
-
 _Make sure to Sync the project with Maven_
 ```shell
 # On Windows environment
@@ -24,6 +28,17 @@ mvnw.cmd spring-boot:run
 # On Linux or macOS environment
 ./mvnw spring-boot:run
 ```
-## License
 
-Pick a project license
+## AI & Outsourcing
+-   **Firebase Initialization:** Debugged with assistance from ChatGPT.
+-   **Database Operations:** Fetching and mapping issues resolved with Antigravity.
+-   **Authentication Checks:** Addressed collaboratively using ChatGPT and Antigravity.
+-   **User Interface Development:** Built and maintained with support from Antigravity.
+-   **Deployment:** Involved minor fixes and adjustments.
+-   **Docker Containerization:** Created and refined using resources from a Medium website and ChatGPT.
+-   **API Endpoints:** Understood and maintained with Antigravity's guidance.
+-   **Spring Framework Concepts:** Clarified through consultation with ChatGPT.
+-   **README.md:** Updated with assistance from Gemini & Antigravity.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
