@@ -30,7 +30,15 @@ public class DeckController {
             List<QueryDocumentSnapshot> documents = future.get().getDocuments();
             List<Deck> decks = new ArrayList<>();
             for (DocumentSnapshot document : documents) {
-                decks.add(document.toObject(Deck.class));
+
+                Deck deck = Deck.builder()
+                        .deckId(document.getString("deckId"))
+                        .name(document.getString("name"))
+                        .description(document.getString("description"))
+                        .category(document.getString("category"))
+                        .build();
+                        
+                decks.add(deck);
             }
             Logger.getInstance().info("Found " + decks.size() + " decks for category: " + category);
             return decks;
